@@ -1,0 +1,44 @@
+<!-- comentei tudo, pois deixo ficso na minha cabeça -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title> Clone do WhatsApp</title> <!-- Define o nome da aba do navegador -->
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar (É a Lista de Contatos) -->
+         <div class="sidebar"> <!-- Aqui ele cria a barra lateral, onde ficam os contatos -->
+             <h2>Seus Contatos</h2> <!-- titulo -->
+            <ul id="contact-list">
+                
+                <!-- Contatos existentes   (fixos) -->
+                 <li>Letícia</li>
+                 <li>João</li>
+                 <li>Maria</li>
+                 <li>Carlos</li>
+                 <li>Ana</li>
+            </ul>
+        </div>
+
+        <!-- Área do Chat -->
+        <div class="chat-area"> <!-- aonde as mensagens aparecem -->
+            <div class="chat-header">
+                <h3 id="chat-title">Selecione um contato</h3>  <!--  aqui esse comando só Mostra o nome do contato quando eleselecionado -->
+            </div>
+             <div class="chat-box" id="chat-box">  <!-- Área onde as mensagens enviadas e recebidas aparecem -->
+                <p class="info">Clique em um contato para conversar.</p>  
+            </div>
+            <div class="chat-input">  <!-- aqui é aonde o usuário digita e envia mensagen -->
+                <input type="text" id="message-input" placeholder="Digite uma mensagem..." disabled> <!-- disabled: o input Começa desatoivado e só funciona após escolher um contato -->
+                <button id="send-btn" disabled>Enviar</button> <!-- aqui é um botão para enviar mensagem -->  
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
